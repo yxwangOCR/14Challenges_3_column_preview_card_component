@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/14Challenges_3_column_preview_card_component/static/css/main.d6c8b862.css",
+    "main.js": "/14Challenges_3_column_preview_card_component/static/js/main.64895d7a.js",
+    "static/media/icon-luxury.svg": "/14Challenges_3_column_preview_card_component/static/media/icon-luxury.7d6e1aefdc39c4742fbb039e7f97a503.svg",
+    "static/media/icon-suvs.svg": "/14Challenges_3_column_preview_card_component/static/media/icon-suvs.058b664c311101933ebda84111ddd9b6.svg",
+    "static/media/icon-sedans.svg": "/14Challenges_3_column_preview_card_component/static/media/icon-sedans.e794502801c486bcffc3513f6f03141e.svg",
+    "index.html": "/14Challenges_3_column_preview_card_component/index.html",
+    "main.d6c8b862.css.map": "/14Challenges_3_column_preview_card_component/static/css/main.d6c8b862.css.map",
+    "main.64895d7a.js.map": "/14Challenges_3_column_preview_card_component/static/js/main.64895d7a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6c8b862.css",
+    "static/js/main.64895d7a.js"
+  ]
+}
