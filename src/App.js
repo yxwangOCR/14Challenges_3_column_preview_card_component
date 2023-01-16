@@ -5,19 +5,36 @@ import IconTwo from "../src/images/icon-suvs.svg";
 import IconThree from "../src/images/icon-luxury.svg";
 
 function App() {
+  const StyledContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    margin: 3em;
+
+    @media (min-width: 768px){
+      margin: 0;
+      padding: 0;
+    }
+  `;
+
   const StyledMain = styled.main`
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 1em;
+    margin: 3em;
+    padding: 2em;
     background-color: hsla(0, 0%, 100%, 0.75);
 
     @media (min-width: 768px) {
       flex-direction: row;
+      height: 100vh;
+      align-items: center;
+      padding: 0;
+      margin: 0;
     }
   `;
+
   const StyledCard = styled.div`
     display: flex;
     flex-direction: column;
@@ -71,53 +88,60 @@ function App() {
   `;
 
   return (
-    <StyledMain>
-      <StyledCard
-        backgroundColor='hsl(31, 77%, 52%)'
-        borderRadius='0.8em 0.8em 0 0'
-        borderRadiusOrientation='0.8em 0 0 0.8em'>
-        <Image src={IconOne} alt='Sedans Car icon' />
-        <Title>Sedans</Title>
-        <Paragraph>
-          Choose a sedan for its affordability and excellent fuel economy. Ideal
-          for cruising in the city or on your next road trip.
-        </Paragraph>
-        <StyledButton
-          borderColor='hsl(31, 77%, 52%)'
-          ButtonColor='hsl(31, 77%, 52%)'>
-          Learn More
-        </StyledButton>
-      </StyledCard>
-      <StyledCard backgroundColor='hsl(184, 100%, 22%)' borderRadius='0'>
-        <Image src={IconTwo} alt='SUVs Car icon' />
-        <Title>SUVs</Title>
-        <Paragraph>
-          Take an SUV for its spacious interior, power, and versatility. Perfect
-          for your next family vacation and off-road adventures.
-        </Paragraph>
-        <StyledButton
-          borderColor='hsl(184, 100%, 22%)'
-          ButtonColor='hsl(184, 100%, 22%)'>
-          Learn More
-        </StyledButton>
-      </StyledCard>
-      <StyledCard
-        backgroundColor='hsl(179, 100%, 13%)'
-        borderRadius='0 0 0.8em 0.8em'
-        borderRadiusOrientation='0 0.8em 0.8em 0'>
-        <Image src={IconThree} alt='Luxury Car icon' />
-        <Title>Luxury</Title>
-        <Paragraph>
-          Cruise in the best car brands without the bloated prices. Enjoy the
-          enhanced comfort of a luxury rental and arrive in style.
-        </Paragraph>
-        <StyledButton
-          borderColor='hsl(179, 100%, 13%)'
-          ButtonColor='hsl(179, 100%, 13%)'>
-          Learn More
-        </StyledButton>
-      </StyledCard>
-    </StyledMain>
+    <StyledContainer>
+      <StyledMain>
+        <StyledCard
+          backgroundColor="hsl(31, 77%, 52%)"
+          borderRadius="0.8em 0.8em 0 0"
+          borderRadiusOrientation="0.8em 0 0 0.8em"
+        >
+          <Image src={IconOne} alt="Sedans Car icon" />
+          <Title>Sedans</Title>
+          <Paragraph>
+            Choose a sedan for its affordability and excellent fuel economy.
+            Ideal for cruising in the city or on your next road trip.
+          </Paragraph>
+          <StyledButton
+            borderColor="hsl(31, 77%, 52%)"
+            ButtonColor="hsl(31, 77%, 52%)"
+          >
+            Learn More
+          </StyledButton>
+        </StyledCard>
+        <StyledCard backgroundColor="hsl(184, 100%, 22%)" borderRadius="0">
+          <Image src={IconTwo} alt="SUVs Car icon" />
+          <Title>SUVs</Title>
+          <Paragraph>
+            Take an SUV for its spacious interior, power, and versatility.
+            Perfect for your next family vacation and off-road adventures.
+          </Paragraph>
+          <StyledButton
+            borderColor="hsl(184, 100%, 22%)"
+            ButtonColor="hsl(184, 100%, 22%)"
+          >
+            Learn More
+          </StyledButton>
+        </StyledCard>
+        <StyledCard
+          backgroundColor="hsl(179, 100%, 13%)"
+          borderRadius="0 0 0.8em 0.8em"
+          borderRadiusOrientation="0 0.8em 0.8em 0"
+        >
+          <Image src={IconThree} alt="Luxury Car icon" />
+          <Title>Luxury</Title>
+          <Paragraph>
+            Cruise in the best car brands without the bloated prices. Enjoy the
+            enhanced comfort of a luxury rental and arrive in style.
+          </Paragraph>
+          <StyledButton
+            borderColor="hsl(179, 100%, 13%)"
+            ButtonColor="hsl(179, 100%, 13%)"
+          >
+            Learn More
+          </StyledButton>
+        </StyledCard>
+      </StyledMain>
+    </StyledContainer>
   );
 }
 
